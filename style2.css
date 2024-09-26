@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: pink;
+    /* text-align: center; */
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    background: #fff;
+    width: fit-content;
+    padding: 20px;
+    margin:  7rem auto;
+    border-radius: 20px;
+
+}
+input,
+button,
+.dropdown{
+    width: 100%;
+}
+.dropdown{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+.dropdown select{
+    height: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    width: 7rem;
+    margin: 10px auto;
+}
+.from,
+ .to{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.amount{
+    font-size: 1.5rem;
+}
+.amount input{
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding: 10px;
+}
+.select-container{
+    border: 3px solid rgb(122, 50, 170);
+    border-radius: 10px;
+}
+button{
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    /* padding: 10px; */
+    margin: 20px auto;
+    background: rgb(122, 50, 170);
+    color: white;
+    font-size: 1.5rem;
+    
+}
+
+@media screen and (max-width: 1200px) {
+    form {
+        width: 70%;
+        /* margin: 10px; Slightly increased width for better visibility */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        width: 90%;
+        /* margin:  10px; */
+    }
+
+    .dropdown select {
+        max-width: 100%;
+        /* margin:  10px; Allow full width on smaller screens */
+    }
+}
+
+@media screen and (max-width: 500px) {
+    form {
+        width: 100%;
+        /* margin:  10px; */
+    }
+}
